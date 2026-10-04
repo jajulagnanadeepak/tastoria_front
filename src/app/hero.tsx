@@ -74,15 +74,11 @@ function Hero({ tableId, onViewMenu }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             {/* ✅ Added props to fix build error */}
+            {/* @ts-expect-error: Library typings incorrectly require DOM props not needed here */}
             <Typography
               variant="h1"
               color="white"
               className="lg:max-w-3xl"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
             >
               Tastoria Cafe: Where Every Sip Tells a Story
             </Typography>
@@ -95,27 +91,19 @@ function Hero({ tableId, onViewMenu }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.7 }}
           >
             {/* ✅ Added props to fix build error */}
+            {/* @ts-expect-error: Library typings incorrectly require DOM props not needed here */}
             <Typography
               variant="lead"
               color="white"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
             >
               Experience the perfect blend of artisanal coffee, gourmet cuisine, and warm hospitality in our cozy Tastoria Cafe.
             </Typography>
             {tableId && (
+              /* @ts-expect-error: Library typings incorrectly require DOM props not needed here */
               <Typography
                 variant="lead"
                 color="white"
                 className="mt-4"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
-                onResize={undefined}
-                onResizeCapture={undefined}
               >
                 <span className="font-bold">Table {tableId}</span>
               </Typography>
@@ -133,15 +121,11 @@ function Hero({ tableId, onViewMenu }: HeroProps) {
               whileTap={{ scale: 0.95 }}
             >
               {/* ✅ Added props to fix build error */}
+              {/* @ts-expect-error: Library typings incorrectly require DOM props not needed here */}
               <Button
                 variant="gradient"
                 color="white"
                 onClick={handleMenuClick}
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
-                onResize={undefined}
-                onResizeCapture={undefined}
               >
                 View Menu
               </Button>
